@@ -1,0 +1,43 @@
+
+.hero {
+  background: linear-gradient(to top, #9ABD96, #72676F);
+  color: #B79D9B;
+  padding: 100px 0; 
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.hero img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto; 
+}
+
+.display-3 {
+  font-size: 3rem; 
+  font-weight: bold; 
+  color: #343a40; 
+}
+
+.lead {
+  font-size: 2rem; 
+  font-style:italic;
+  color: #343a40; 
+  margin-bottom: 20px; 
+}
+
+
+
+@media (max-width: 768px) {
+  .display-3 {
+      font-size: 2.5rem; 
+  }
+
+  .lead {
+      font-size: 1.1rem; 
+  }
+}

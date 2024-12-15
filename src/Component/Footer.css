@@ -1,0 +1,34 @@
+
+.footer {
+  background: linear-gradient(to right, #514030, #30333A);
+  color: #B79D9B;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer p:last-child {
+  color: #9ABD96;
+}
+
+
+.footer.light {
+  background: #f8f9fa; 
+  color: #343a40; 
+}
+
+.footer.light p:last-child {
+  color: #6c757d; 
+}
+/* dark */
+.footer.dark {
+  background: linear-gradient(to right, #514030, #30333A); 
+  color: #B79D9B;
+}
+
+.footer.dark p:last-child {
+  color: #9ABD96; 
+}
