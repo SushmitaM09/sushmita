@@ -1,7 +1,7 @@
 import React, { useState } from 'react'; 
 import './Contact.css';
 
-function Contact() {
+function Contact({isDarkMode}) {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -32,7 +32,7 @@ function Contact() {
   };
 
   return (
-    <section className="contact">
+    <section id="contact" className={`contact-section ${isDarkMode ? 'dark' : 'light'}`}>
       <form onSubmit={onSubmit}>
         <h2>Contact</h2>
         <div className="input-box">

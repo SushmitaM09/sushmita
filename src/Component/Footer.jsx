@@ -1,14 +1,10 @@
 import React from 'react';
 import './Footer.css';
-import { useTheme } from './ThemeContext';
 
-
-function Footer() {
-  const {theme} = useTheme;
+function Footer({ isDarkMode }) {
   return (
-   
-<footer className={`footer footer-${theme} bg-primary text-white text-center py-3`}>
-      <p>&copy; 2024 Sushmita Magar. All rights reserved.</p>
+    <footer className={isDarkMode ? 'dark' : 'light'}>
+      <p>&copy; 2024 Sushmita, 2024</p>
     </footer>
   );
 }

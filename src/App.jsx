@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Home from './Component/Home';
 import Navigation from './Component/Navigation';
@@ -7,22 +7,24 @@ import Footer from './Component/Footer';
 import Projects from './Component/Projects';
 import Skills from './Component/Skills';
 import About from './Component/About';
-import { ThemeProvider } from './Component/ThemeContext';
 
 function App() {
-  return (
-    <div>
-<ThemeProvider>
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-<Navigation/>
-<Home/>
-<Skills/>
-<About/>
-<Projects/>
-<Contact/>
-<Footer/>
-</ThemeProvider>
-</div>
+  const toggleTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  };
+
+  return (
+    <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
+      <Navigation toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      <Home isDarkMode={isDarkMode} />
+      <Skills isDarkMode={isDarkMode} />
+      <About isDarkMode={isDarkMode} />
+      <Projects isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
+    </div>
   );
 }
 

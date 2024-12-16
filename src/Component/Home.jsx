@@ -1,29 +1,22 @@
 import React from 'react';
 import './Home.css';
-import profile from '../Image/profile.jpg';
+import profile from '../Image/profile.jpg'
 
-function Home() {
+function Home({ isDarkMode }) {
   return (
-    <div className="hero">
-      <div className="container text-center">
-        <div className="row align-items-center">
-        
-          <div className="col-md-6 mb-4">
-          <img 
-            src={profile} 
-            alt="Your Profile" 
-            className="img-fluid shadow"
-            />
+    <section className={`home-section ${isDarkMode ? 'dark' : 'light'}`}>
+      <div className="container">
+        <div className="home-content">
+          <div className="profile-photo-container">
+            <img src={profile} alt="Sushmita" className="profile-photo" />
           </div>
-          
-          <div className="col-md-6">
-            <h1 className="display-3">Hi, I'm  Sushmita</h1>
-            <p className="lead">Frontend Developer | UI/UX Designer</p>
-            <a href="#projects" className="btn hero-btn btn-lg mt-3">View My Work</a>
+          <div className="text-content">
+            <h1>Welcome to Sushmita's Portfolio</h1>
+            <p>Here you can learn more about me, my projects, and skills.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

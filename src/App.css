@@ -1,21 +1,71 @@
+/* Global Reset */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #333;
   margin: 0;
   padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-body.light {
-  background-color: white;
-  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Global Light and Dark Mode Styles */
 body.dark {
-  background-color: #343a40; 
-  color: white;
+  background-color: #30333A;
+  color: #FFFFFF;
 }
 
+body.light {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* App Wrapper Styling */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar-dark {
+  background-color: #30333A;
+}
+
+.navbar-light {
+  background-color: #FFFFFF;
+}
+
+/* Button Styling */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.btn-outline-light:hover {
+  background-color: #9ABD96;
+  color: #30333A;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #30333A;
+  color: #B79D9B;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer.light {
+  background-color: #FFFFFF;
+  color: #30333A;
+}
+
+footer.dark {
+  background-color: #30333A;
+  color: #B79D9B;
+}

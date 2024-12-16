@@ -1,100 +1,132 @@
-.contact {
-  background: linear-gradient(to top, #9ABD96, #72676F);
-  color: #B79D9B;
-  padding: 80px 20px;
-}
 
-.contact h2 {
-  color: #9ABD96;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.contact-section {
+  padding: 4rem 2rem;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.contact p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  color: #B0A6A7;
-  text-align: center;
-}
-
-.input-box {
-  margin-bottom: 20px;
-}
-
-.input-box label {
-  display: block;
-  font-size: 1rem;
-  color: #9ABD96;
-  margin-bottom: 5px;
-}
-
-.field {
-  width: 100%;
+.contact-section.dark {
   background-color: #30333A;
-  color: #B79D9B;
-  border: 1px solid #72676F;
-  padding: 10px;
+  color: #FFFFFF;
+}
+
+.contact-section.light {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #B0A6A7;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contact-section form.dark {
+  background-color: #72676F;
+}
+
+.contact-section form.light {
+  background-color: #F8F9FA;
+}
+
+.contact-section .input-box {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.contact-section .input-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section .field {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  transition: border 0.3s ease, background-color 0.3s ease;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
-.field:focus {
+.contact-section .field:focus {
+  border-color: #9ABD96;
   outline: none;
-  border: 2px solid #9ABD96;
-  background-color: #514030;
 }
 
-.field::placeholder {
-  color: #B0A6A7;
-}
-
-textarea.field.mess {
-  min-height: 120px;
+.contact-section .mess {
   resize: vertical;
 }
 
-button {
-  background-color: #514030;
-  color: #9ABD96;
-  padding: 10px 20px;
+.contact-section button {
+  padding: 1rem 2rem;
+  background-color: #9ABD96;
+  color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background: radial-gradient(to right, #514030, #30333A);
-  color: #B79D9B;
-  transform: scale(1.05);
+.contact-section button:hover {
+  background-color: #72676F;
 }
 
-button:focus {
-  outline: 2px solid #72676F;
-}
-
+/* Result Message */
 .result-message {
-  margin-top: 20px;
+  margin-top: 1rem;
   font-size: 1rem;
-  color: #B79D9B;
-  text-align: center;
+  color: #9ABD96;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .contact {
-    padding: 60px 15px;
+  .contact-section {
+    padding: 3rem 1rem;
   }
 
-  .contact h2 {
-    font-size: 2rem;
+  .contact-section form {
+    padding: 1.5rem;
+    width: 90%; /* Adjust form width for smaller screens */
   }
 
-  .input-box label {
+  .contact-section .field {
     font-size: 0.9rem;
   }
 
-  .field {
-    padding: 8px;
+  .contact-section button {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-section form {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .contact-section .field {
+    font-size: 0.8rem;
+  }
+
+  .contact-section button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
   }
 }

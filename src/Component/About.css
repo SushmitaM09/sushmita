@@ -1,53 +1,80 @@
 
 .about-section {
-    padding: 50px 20px;
-    background-color: #72676F; 
-    color: #ffffff;
-    text-align: center;
+  padding: 50px 20px;
+  background-color: #72676F;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-section .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #9ABD96;
+}
+
+.about-section .about-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #E0E0E0;
+}
+
+
+.about-section.light {
+  background-color: #f8f9fa; 
+  color: #343a40; 
+}
+
+.about-section.light .section-title {
+  color: #9ABD96; 
+}
+
+.about-section.light .about-description {
+  color: #495057; 
+}
+
+.about-section.dark {
+  background-color: #30333A; 
+  color: #ffffff;
+}
+
+.about-section.dark .section-title {
+  color: #9ABD96; 
+}
+
+.about-section.dark .about-description {
+  color: #B0A6A7; 
+}
+
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
   }
-  
+
   .about-section .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #9ABD96;
-  }
-  
-  .about-section .about-description {
     font-size: 2rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #E0E0E0; 
   }
-  
-  
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 40px 15px;
-    }
-  
-    .about-section .section-title {
-      font-size: 2rem;
-    }
-  
-    .about-section .about-description {
-      font-size: 1rem;
-    }
+
+  .about-section .about-description {
+    font-size: 1rem;
   }
-  
-  @media (max-width: 480px) {
-    .about-section {
-      padding: 30px 10px;
-    }
-  
-    .about-section .section-title {
-      font-size: 1.8rem;
-    }
-  
-    .about-section .about-description {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 10px;
   }
-  
+
+  .about-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-section .about-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 import './Skills.css';
-function Skills() {
+
+function Skills({ isDarkMode }) {
   const skillSet = [
     { name: "HTML", level: "Expert" },
     { name: "CSS", level: "Advanced" },
@@ -11,7 +12,7 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className={`skills-section ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="container">
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">
