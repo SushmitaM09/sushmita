@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sushmita/static/css/main.4d44628e.css",
+    "main.js": "/sushmita/static/js/main.b8a73384.js",
+    "static/js/453.04ec5b8f.chunk.js": "/sushmita/static/js/453.04ec5b8f.chunk.js",
+    "static/media/profile.jpg": "/sushmita/static/media/profile.d9b0b6f87505b2ea6b72.jpg",
+    "index.html": "/sushmita/index.html",
+    "main.4d44628e.css.map": "/sushmita/static/css/main.4d44628e.css.map",
+    "main.b8a73384.js.map": "/sushmita/static/js/main.b8a73384.js.map",
+    "453.04ec5b8f.chunk.js.map": "/sushmita/static/js/453.04ec5b8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d44628e.css",
+    "static/js/main.b8a73384.js"
+  ]
+}
